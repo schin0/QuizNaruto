@@ -5,15 +5,17 @@
  */
 package desenvolvimento;
 
+import java.awt.CardLayout;
+
 /**
  *
  * @author schin
  */
 public class Tela extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Tela
-     */
+    //VARIÁVEIS:
+    double pontos;
+    
     public Tela() {
         initComponents();
     }
@@ -27,31 +29,91 @@ public class Tela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        pnlPrincipal = new javax.swing.JPanel();
+        pnlInico = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jPanel8 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
-        jPanel11 = new javax.swing.JPanel();
-        jPanel12 = new javax.swing.JPanel();
+        pnlPergunta1 = new javax.swing.JPanel();
+        lblPergunta1 = new javax.swing.JLabel();
+        lblTexto1 = new javax.swing.JLabel();
+        radio1a = new javax.swing.JRadioButton();
+        radio1b = new javax.swing.JRadioButton();
+        radio1c = new javax.swing.JRadioButton();
+        radio1d = new javax.swing.JRadioButton();
+        pnlPergunta2 = new javax.swing.JPanel();
+        lblPergunta2 = new javax.swing.JLabel();
+        lblTexto2 = new javax.swing.JLabel();
+        radio2a = new javax.swing.JRadioButton();
+        radio2b = new javax.swing.JRadioButton();
+        radio2c = new javax.swing.JRadioButton();
+        radio2d = new javax.swing.JRadioButton();
+        pnlPergunta3 = new javax.swing.JPanel();
+        lblPergunta3 = new javax.swing.JLabel();
+        lblTexto3 = new javax.swing.JLabel();
+        radio3a = new javax.swing.JRadioButton();
+        radio3b = new javax.swing.JRadioButton();
+        radio3c = new javax.swing.JRadioButton();
+        radio3d = new javax.swing.JRadioButton();
+        pnlPergunta4 = new javax.swing.JPanel();
+        lblPergunta4 = new javax.swing.JLabel();
+        lblTexto4 = new javax.swing.JLabel();
+        radio4a = new javax.swing.JRadioButton();
+        radio4b = new javax.swing.JRadioButton();
+        radio4c = new javax.swing.JRadioButton();
+        radio4d = new javax.swing.JRadioButton();
+        pnlPergunta5 = new javax.swing.JPanel();
+        lblPergunta5 = new javax.swing.JLabel();
+        lblTexto5 = new javax.swing.JLabel();
+        radio5a = new javax.swing.JRadioButton();
+        radio5b = new javax.swing.JRadioButton();
+        radio5c = new javax.swing.JRadioButton();
+        radio5d = new javax.swing.JRadioButton();
+        pnlPergunta6 = new javax.swing.JPanel();
+        lblPergunta6 = new javax.swing.JLabel();
+        lblTexto6 = new javax.swing.JLabel();
+        radio6a = new javax.swing.JRadioButton();
+        radio6b = new javax.swing.JRadioButton();
+        radio6c = new javax.swing.JRadioButton();
+        radio6d = new javax.swing.JRadioButton();
+        pnlPergunta7 = new javax.swing.JPanel();
+        lblPergunta7 = new javax.swing.JLabel();
+        lblTexto7 = new javax.swing.JLabel();
+        radio7a = new javax.swing.JRadioButton();
+        radio7b = new javax.swing.JRadioButton();
+        radio7c = new javax.swing.JRadioButton();
+        radio7d = new javax.swing.JRadioButton();
+        pnlPergunta8 = new javax.swing.JPanel();
+        lblPergunta8 = new javax.swing.JLabel();
+        lblTexto8 = new javax.swing.JLabel();
+        radio8a = new javax.swing.JRadioButton();
+        radio8b = new javax.swing.JRadioButton();
+        radio8c = new javax.swing.JRadioButton();
+        radio8d = new javax.swing.JRadioButton();
+        pnlPergunta9 = new javax.swing.JPanel();
+        lblPergunta9 = new javax.swing.JLabel();
+        lblTexto9 = new javax.swing.JLabel();
+        radio9a = new javax.swing.JRadioButton();
+        radio9b = new javax.swing.JRadioButton();
+        radio9c = new javax.swing.JRadioButton();
+        radio9d = new javax.swing.JRadioButton();
+        pnlPergunta10 = new javax.swing.JPanel();
+        lblPergunta10 = new javax.swing.JLabel();
+        lblTexto10 = new javax.swing.JLabel();
+        radio10a = new javax.swing.JRadioButton();
+        radio10b = new javax.swing.JRadioButton();
+        radio10c = new javax.swing.JRadioButton();
+        radio10d = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 255, 153));
-        jPanel1.setOpaque(false);
-        jPanel1.setLayout(new java.awt.CardLayout());
+        pnlPrincipal.setBackground(new java.awt.Color(0, 255, 153));
+        pnlPrincipal.setOpaque(false);
+        pnlPrincipal.setLayout(new java.awt.CardLayout());
 
-        jPanel2.setBackground(new java.awt.Color(153, 153, 255));
+        pnlInico.setBackground(new java.awt.Color(153, 153, 255));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -65,23 +127,23 @@ public class Tela extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\schin\\OneDrive\\Área de Trabalho\\NarutoCapa.png")); // NOI18N
         jLabel3.setText("jLabel3");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlInicoLayout = new javax.swing.GroupLayout(pnlInico);
+        pnlInico.setLayout(pnlInicoLayout);
+        pnlInicoLayout.setHorizontalGroup(
+            pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlInicoLayout.createSequentialGroup()
                 .addContainerGap(38, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+        pnlInicoLayout.setVerticalGroup(
+            pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlInicoLayout.createSequentialGroup()
+                .addGroup(pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlInicoLayout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -90,187 +152,842 @@ public class Tela extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel2, "card12");
+        pnlPrincipal.add(pnlInico, "inicio");
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 0));
+        pnlPergunta1.setBackground(new java.awt.Color(255, 255, 0));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
+        lblPergunta1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta1.setText("Pergunta 1");
+
+        lblTexto1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto1.setText("Onde Naruto vive?");
+
+        radio1a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1a.setText("Aldeia da Folha");
+        radio1a.setOpaque(false);
+        radio1a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio1aActionPerformed(evt);
+            }
+        });
+
+        radio1b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1b.setText("Aldeia da Areia");
+        radio1b.setOpaque(false);
+
+        radio1c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1c.setText("Aldeia da Pedra");
+        radio1c.setOpaque(false);
+
+        radio1d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1d.setText("Aldeia da Água");
+        radio1d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta1Layout = new javax.swing.GroupLayout(pnlPergunta1);
+        pnlPergunta1.setLayout(pnlPergunta1Layout);
+        pnlPergunta1Layout.setHorizontalGroup(
+            pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta1Layout.createSequentialGroup()
+                .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta1))
+                    .addGroup(pnlPergunta1Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto1))
+                    .addGroup(pnlPergunta1Layout.createSequentialGroup()
+                        .addGap(94, 94, 94)
+                        .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(radio1b)
+                            .addComponent(radio1a)
+                            .addComponent(radio1c)
+                            .addComponent(radio1d))))
+                .addContainerGap(647, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel3, "card2");
-
-        jPanel4.setBackground(new java.awt.Color(255, 153, 0));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel4, "card3");
-
-        jPanel5.setBackground(new java.awt.Color(255, 255, 0));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel5, "card4");
-
-        jPanel6.setBackground(new java.awt.Color(255, 153, 0));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel6, "card5");
-
-        jPanel7.setBackground(new java.awt.Color(255, 255, 0));
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
+        pnlPergunta1Layout.setVerticalGroup(
+            pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta1)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto1)
+                .addGap(18, 18, 18)
+                .addComponent(radio1a)
+                .addGap(18, 18, 18)
+                .addComponent(radio1b)
+                .addGap(18, 18, 18)
+                .addComponent(radio1c)
+                .addGap(18, 18, 18)
+                .addComponent(radio1d)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel7, "card6");
+        pnlPrincipal.add(pnlPergunta1, "p1");
 
-        jPanel8.setBackground(new java.awt.Color(255, 153, 0));
+        pnlPergunta2.setBackground(new java.awt.Color(255, 153, 0));
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
+        lblPergunta2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta2.setText("Pergunta 2");
+
+        lblTexto2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto2.setText("Como se chama o pai de Naruto?");
+
+        radio2a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio2a.setText("Kakashi");
+        radio2a.setOpaque(false);
+
+        radio2b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio2b.setText("Guy");
+        radio2b.setOpaque(false);
+
+        radio2c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio2c.setText("Minato");
+        radio2c.setOpaque(false);
+        radio2c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio2cActionPerformed(evt);
+            }
+        });
+
+        radio2d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio2d.setText("Shikaku");
+        radio2d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta2Layout = new javax.swing.GroupLayout(pnlPergunta2);
+        pnlPergunta2.setLayout(pnlPergunta2Layout);
+        pnlPergunta2Layout.setHorizontalGroup(
+            pnlPergunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta2Layout.createSequentialGroup()
+                .addGroup(pnlPergunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta2))
+                    .addGroup(pnlPergunta2Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto2))
+                    .addGroup(pnlPergunta2Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(radio2a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio2b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio2c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio2d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(601, Short.MAX_VALUE))
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel8, "card7");
-
-        jPanel9.setBackground(new java.awt.Color(255, 255, 0));
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel9, "card8");
-
-        jPanel10.setBackground(new java.awt.Color(255, 153, 0));
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel10, "card9");
-
-        jPanel11.setBackground(new java.awt.Color(255, 255, 0));
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel11, "card10");
-
-        jPanel12.setBackground(new java.awt.Color(255, 153, 0));
-
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 880, Short.MAX_VALUE)
-        );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 301, Short.MAX_VALUE)
+        pnlPergunta2Layout.setVerticalGroup(
+            pnlPergunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta2)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto2)
+                .addGap(18, 18, 18)
+                .addComponent(radio2a)
+                .addGap(18, 18, 18)
+                .addComponent(radio2b)
+                .addGap(18, 18, 18)
+                .addComponent(radio2c)
+                .addGap(18, 18, 18)
+                .addComponent(radio2d)
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel12, "card11");
+        pnlPrincipal.add(pnlPergunta2, "p2");
 
+        pnlPergunta3.setBackground(new java.awt.Color(255, 255, 0));
+
+        lblPergunta3.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta3.setText("Pergunta 3");
+
+        lblTexto3.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto3.setText("Como se chama o time de elite que protege o Hokage?");
+
+        radio3a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio3a.setText("Akatsuki");
+        radio3a.setOpaque(false);
+
+        radio3b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio3b.setText("Arco");
+        radio3b.setOpaque(false);
+
+        radio3c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio3c.setText("Sunakagure");
+        radio3c.setOpaque(false);
+
+        radio3d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio3d.setText("Ambu");
+        radio3d.setOpaque(false);
+        radio3d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio3dActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlPergunta3Layout = new javax.swing.GroupLayout(pnlPergunta3);
+        pnlPergunta3.setLayout(pnlPergunta3Layout);
+        pnlPergunta3Layout.setHorizontalGroup(
+            pnlPergunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta3Layout.createSequentialGroup()
+                .addGroup(pnlPergunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta3))
+                    .addGroup(pnlPergunta3Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto3))
+                    .addGroup(pnlPergunta3Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(radio3a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio3b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio3c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio3d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(445, Short.MAX_VALUE))
+        );
+        pnlPergunta3Layout.setVerticalGroup(
+            pnlPergunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta3)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto3)
+                .addGap(18, 18, 18)
+                .addComponent(radio3a)
+                .addGap(18, 18, 18)
+                .addComponent(radio3b)
+                .addGap(18, 18, 18)
+                .addComponent(radio3c)
+                .addGap(18, 18, 18)
+                .addComponent(radio3d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta3, "p3");
+
+        pnlPergunta4.setBackground(new java.awt.Color(255, 153, 0));
+
+        lblPergunta4.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta4.setText("Pergunta 4");
+
+        lblTexto4.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto4.setText("Qual o clã considerado amaldiçoado pelo lendário Segundo Hokage?");
+
+        radio4a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio4a.setText("Uchiha");
+        radio4a.setOpaque(false);
+        radio4a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio4aActionPerformed(evt);
+            }
+        });
+
+        radio4b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio4b.setText("Namikaze");
+        radio4b.setOpaque(false);
+
+        radio4c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio4c.setText("Senju");
+        radio4c.setOpaque(false);
+
+        radio4d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio4d.setText("Uzumaki");
+        radio4d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta4Layout = new javax.swing.GroupLayout(pnlPergunta4);
+        pnlPergunta4.setLayout(pnlPergunta4Layout);
+        pnlPergunta4Layout.setHorizontalGroup(
+            pnlPergunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta4Layout.createSequentialGroup()
+                .addGroup(pnlPergunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta4))
+                    .addGroup(pnlPergunta4Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto4))
+                    .addGroup(pnlPergunta4Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(radio4a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio4b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio4c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio4d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(345, Short.MAX_VALUE))
+        );
+        pnlPergunta4Layout.setVerticalGroup(
+            pnlPergunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta4)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto4)
+                .addGap(18, 18, 18)
+                .addComponent(radio4a)
+                .addGap(18, 18, 18)
+                .addComponent(radio4b)
+                .addGap(18, 18, 18)
+                .addComponent(radio4c)
+                .addGap(18, 18, 18)
+                .addComponent(radio4d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta4, "p4");
+
+        pnlPergunta5.setBackground(new java.awt.Color(255, 255, 0));
+
+        lblPergunta5.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta5.setText("Pergunta 5");
+
+        lblTexto5.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto5.setText("Qual a bijuu de Naruto?");
+
+        radio5a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio5a.setText("Matatabi");
+        radio5a.setOpaque(false);
+
+        radio5b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio5b.setText("Isobu");
+        radio5b.setOpaque(false);
+
+        radio5c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio5c.setText("Kurama");
+        radio5c.setOpaque(false);
+        radio5c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio5cActionPerformed(evt);
+            }
+        });
+
+        radio5d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio5d.setText("Son Goku");
+        radio5d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta5Layout = new javax.swing.GroupLayout(pnlPergunta5);
+        pnlPergunta5.setLayout(pnlPergunta5Layout);
+        pnlPergunta5Layout.setHorizontalGroup(
+            pnlPergunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta5Layout.createSequentialGroup()
+                .addGroup(pnlPergunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(radio5d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(radio5c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(radio5b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(radio5a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnlPergunta5Layout.createSequentialGroup()
+                        .addGroup(pnlPergunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlPergunta5Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblPergunta5))
+                            .addGroup(pnlPergunta5Layout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addComponent(lblTexto5)))
+                        .addGap(15, 15, 15)))
+                .addContainerGap(657, Short.MAX_VALUE))
+        );
+        pnlPergunta5Layout.setVerticalGroup(
+            pnlPergunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta5)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto5)
+                .addGap(18, 18, 18)
+                .addComponent(radio5a)
+                .addGap(18, 18, 18)
+                .addComponent(radio5b)
+                .addGap(18, 18, 18)
+                .addComponent(radio5c)
+                .addGap(18, 18, 18)
+                .addComponent(radio5d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta5, "p5");
+
+        pnlPergunta6.setBackground(new java.awt.Color(255, 153, 0));
+
+        lblPergunta6.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta6.setText("Pergunta 6");
+
+        lblTexto6.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto6.setText("Qual o número do time de Naruto, Sasuke, Sakura e Kakashi? ");
+
+        radio6a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio6a.setText("Time 10");
+        radio6a.setOpaque(false);
+        radio6a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio6aActionPerformed(evt);
+            }
+        });
+
+        radio6b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio6b.setText("Time 7");
+        radio6b.setOpaque(false);
+        radio6b.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio6bActionPerformed(evt);
+            }
+        });
+
+        radio6c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio6c.setText("Time 5");
+        radio6c.setOpaque(false);
+
+        radio6d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio6d.setText("Time 3");
+        radio6d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta6Layout = new javax.swing.GroupLayout(pnlPergunta6);
+        pnlPergunta6.setLayout(pnlPergunta6Layout);
+        pnlPergunta6Layout.setHorizontalGroup(
+            pnlPergunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta6Layout.createSequentialGroup()
+                .addGroup(pnlPergunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta6))
+                    .addGroup(pnlPergunta6Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto6))
+                    .addGroup(pnlPergunta6Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(radio6a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio6b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio6c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio6d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(398, Short.MAX_VALUE))
+        );
+        pnlPergunta6Layout.setVerticalGroup(
+            pnlPergunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta6)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto6)
+                .addGap(18, 18, 18)
+                .addComponent(radio6a)
+                .addGap(18, 18, 18)
+                .addComponent(radio6b)
+                .addGap(18, 18, 18)
+                .addComponent(radio6c)
+                .addGap(18, 18, 18)
+                .addComponent(radio6d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta6, "p6");
+
+        pnlPergunta7.setBackground(new java.awt.Color(255, 255, 0));
+
+        lblPergunta7.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta7.setText("Pergunta 7");
+
+        lblTexto7.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto7.setText("Quem ensinou o jutsu de invocação para o Naruto?");
+
+        radio7a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio7a.setText("Jiraya");
+        radio7a.setOpaque(false);
+        radio7a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio7aActionPerformed(evt);
+            }
+        });
+
+        radio7b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio7b.setText("Tsunade");
+        radio7b.setOpaque(false);
+
+        radio7c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio7c.setText("Kakashi");
+        radio7c.setOpaque(false);
+
+        radio7d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio7d.setText("Hiruzen Sarutobi  ");
+        radio7d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta7Layout = new javax.swing.GroupLayout(pnlPergunta7);
+        pnlPergunta7.setLayout(pnlPergunta7Layout);
+        pnlPergunta7Layout.setHorizontalGroup(
+            pnlPergunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta7Layout.createSequentialGroup()
+                .addGroup(pnlPergunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta7Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta7))
+                    .addGroup(pnlPergunta7Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto7))
+                    .addGroup(pnlPergunta7Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(radio7d)
+                            .addGroup(pnlPergunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(radio7a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(radio7b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(radio7c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(470, Short.MAX_VALUE))
+        );
+        pnlPergunta7Layout.setVerticalGroup(
+            pnlPergunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta7)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto7)
+                .addGap(18, 18, 18)
+                .addComponent(radio7a)
+                .addGap(18, 18, 18)
+                .addComponent(radio7b)
+                .addGap(18, 18, 18)
+                .addComponent(radio7c)
+                .addGap(18, 18, 18)
+                .addComponent(radio7d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta7, "p7");
+
+        pnlPergunta8.setBackground(new java.awt.Color(255, 153, 0));
+
+        lblPergunta8.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta8.setText("Pergunta 8");
+
+        lblTexto8.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto8.setText("Quem deu origem ao clã Uchiha?");
+
+        radio8a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio8a.setText("Kaguya");
+        radio8a.setOpaque(false);
+
+        radio8b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio8b.setText("Hamura");
+        radio8b.setOpaque(false);
+
+        radio8c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio8c.setText("Indra");
+        radio8c.setOpaque(false);
+        radio8c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio8cActionPerformed(evt);
+            }
+        });
+
+        radio8d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio8d.setText("Madara");
+        radio8d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta8Layout = new javax.swing.GroupLayout(pnlPergunta8);
+        pnlPergunta8.setLayout(pnlPergunta8Layout);
+        pnlPergunta8Layout.setHorizontalGroup(
+            pnlPergunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta8Layout.createSequentialGroup()
+                .addGroup(pnlPergunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta8Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta8))
+                    .addGroup(pnlPergunta8Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto8))
+                    .addGroup(pnlPergunta8Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(radio8a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio8b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio8c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio8d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(603, Short.MAX_VALUE))
+        );
+        pnlPergunta8Layout.setVerticalGroup(
+            pnlPergunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta8)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto8)
+                .addGap(18, 18, 18)
+                .addComponent(radio8a)
+                .addGap(18, 18, 18)
+                .addComponent(radio8b)
+                .addGap(18, 18, 18)
+                .addComponent(radio8c)
+                .addGap(18, 18, 18)
+                .addComponent(radio8d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta8, "p8");
+
+        pnlPergunta9.setBackground(new java.awt.Color(255, 255, 0));
+
+        lblPergunta9.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta9.setText("Pergunta 9");
+
+        lblTexto9.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto9.setText("Quando Naruto viu sua mãe pela primeira vez, quem ele pensou que ela era?");
+
+        radio9a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio9a.setText("A mãe de Nagato ");
+        radio9a.setOpaque(false);
+
+        radio9b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio9b.setText("A verdadeira forma da Kurama ");
+        radio9b.setOpaque(false);
+        radio9b.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio9bActionPerformed(evt);
+            }
+        });
+
+        radio9c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio9c.setText("Uma antiga Jinchuuriki ");
+        radio9c.setOpaque(false);
+
+        radio9d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio9d.setText("A sua avó ");
+        radio9d.setOpaque(false);
+
+        javax.swing.GroupLayout pnlPergunta9Layout = new javax.swing.GroupLayout(pnlPergunta9);
+        pnlPergunta9.setLayout(pnlPergunta9Layout);
+        pnlPergunta9Layout.setHorizontalGroup(
+            pnlPergunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta9Layout.createSequentialGroup()
+                .addGroup(pnlPergunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta9Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta9))
+                    .addGroup(pnlPergunta9Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto9))
+                    .addGroup(pnlPergunta9Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(radio9a)
+                            .addComponent(radio9d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(radio9b)
+                            .addComponent(radio9c, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(287, Short.MAX_VALUE))
+        );
+        pnlPergunta9Layout.setVerticalGroup(
+            pnlPergunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta9)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto9)
+                .addGap(18, 18, 18)
+                .addComponent(radio9a)
+                .addGap(18, 18, 18)
+                .addComponent(radio9b)
+                .addGap(18, 18, 18)
+                .addComponent(radio9c)
+                .addGap(18, 18, 18)
+                .addComponent(radio9d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta9, "p9");
+
+        pnlPergunta10.setBackground(new java.awt.Color(255, 153, 0));
+
+        lblPergunta10.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblPergunta10.setText("Pergunta 10");
+
+        lblTexto10.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto10.setText("Quem é o Sétimo Hokage? ");
+
+        radio10a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio10a.setText("Hashirama Senju");
+        radio10a.setOpaque(false);
+
+        radio10b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio10b.setText("Hiruzen Sarutobi ");
+        radio10b.setOpaque(false);
+
+        radio10c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio10c.setText("Minato Namikaze ");
+        radio10c.setOpaque(false);
+
+        radio10d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio10d.setText("Naruto Uzumaki ");
+        radio10d.setOpaque(false);
+        radio10d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio10dActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlPergunta10Layout = new javax.swing.GroupLayout(pnlPergunta10);
+        pnlPergunta10.setLayout(pnlPergunta10Layout);
+        pnlPergunta10Layout.setHorizontalGroup(
+            pnlPergunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta10Layout.createSequentialGroup()
+                .addGroup(pnlPergunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPergunta10Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblPergunta10))
+                    .addGroup(pnlPergunta10Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(lblTexto10))
+                    .addGroup(pnlPergunta10Layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addGroup(pnlPergunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(radio10a)
+                            .addComponent(radio10b)
+                            .addComponent(radio10c)
+                            .addComponent(radio10d))))
+                .addContainerGap(629, Short.MAX_VALUE))
+        );
+        pnlPergunta10Layout.setVerticalGroup(
+            pnlPergunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPergunta10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPergunta10)
+                .addGap(18, 18, 18)
+                .addComponent(lblTexto10)
+                .addGap(18, 18, 18)
+                .addComponent(radio10a)
+                .addGap(18, 18, 18)
+                .addComponent(radio10b)
+                .addGap(18, 18, 18)
+                .addComponent(radio10c)
+                .addGap(18, 18, 18)
+                .addComponent(radio10d)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        pnlPrincipal.add(pnlPergunta10, "p10");
+
+        jButton1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
         jButton1.setText("Anterior");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Próximo");
+        jButton3.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jButton3.setText("Próximo");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(jButton3)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(0, 16, Short.MAX_VALUE))
+                    .addComponent(jButton3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //BOTÃO ANTERIOR:
+        CardLayout cartao = (CardLayout)pnlPrincipal.getLayout();
+        cartao.previous(pnlPrincipal);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        CardLayout cartao = (CardLayout)pnlPrincipal.getLayout();
+        cartao.next(pnlPrincipal);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void radio1aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio1aActionPerformed
+        // Alternativa correta:
+        if (radio1a.isSelected()) {
+            pontos++; 
+        }
+        
+    }//GEN-LAST:event_radio1aActionPerformed
+
+    private void radio6aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio6aActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radio6aActionPerformed
+
+    private void radio2cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio2cActionPerformed
+        // Alternativa correta:
+        if (radio2c.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio2cActionPerformed
+
+    private void radio3dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio3dActionPerformed
+        // Alternativa correta:
+        if (radio3d.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio3dActionPerformed
+
+    private void radio4aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio4aActionPerformed
+        // Alternativa correta:
+        if (radio4a.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio4aActionPerformed
+
+    private void radio5cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio5cActionPerformed
+        // Alternativa correta:
+        if (radio5c.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio5cActionPerformed
+
+    private void radio6bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio6bActionPerformed
+        // Alternativa correta:
+        if (radio6b.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio6bActionPerformed
+
+    private void radio7aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio7aActionPerformed
+        // Alternativa correta:
+        if (radio7a.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio7aActionPerformed
+
+    private void radio8cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio8cActionPerformed
+        // Alternativa correta:
+        if (radio8c.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio8cActionPerformed
+
+    private void radio9bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio9bActionPerformed
+        // Alternativa correta:
+        if (radio9b.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio9bActionPerformed
+
+    private void radio10dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio10dActionPerformed
+        /// Alternativa correta:
+        if (radio10d.isSelected()) {
+            pontos++; 
+        }
+    }//GEN-LAST:event_radio10dActionPerformed
 
     /**
      * @param args the command line arguments
@@ -309,21 +1026,81 @@ public class Tela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel lblPergunta1;
+    private javax.swing.JLabel lblPergunta10;
+    private javax.swing.JLabel lblPergunta2;
+    private javax.swing.JLabel lblPergunta3;
+    private javax.swing.JLabel lblPergunta4;
+    private javax.swing.JLabel lblPergunta5;
+    private javax.swing.JLabel lblPergunta6;
+    private javax.swing.JLabel lblPergunta7;
+    private javax.swing.JLabel lblPergunta8;
+    private javax.swing.JLabel lblPergunta9;
+    private javax.swing.JLabel lblTexto1;
+    private javax.swing.JLabel lblTexto10;
+    private javax.swing.JLabel lblTexto2;
+    private javax.swing.JLabel lblTexto3;
+    private javax.swing.JLabel lblTexto4;
+    private javax.swing.JLabel lblTexto5;
+    private javax.swing.JLabel lblTexto6;
+    private javax.swing.JLabel lblTexto7;
+    private javax.swing.JLabel lblTexto8;
+    private javax.swing.JLabel lblTexto9;
+    private javax.swing.JPanel pnlInico;
+    private javax.swing.JPanel pnlPergunta1;
+    private javax.swing.JPanel pnlPergunta10;
+    private javax.swing.JPanel pnlPergunta2;
+    private javax.swing.JPanel pnlPergunta3;
+    private javax.swing.JPanel pnlPergunta4;
+    private javax.swing.JPanel pnlPergunta5;
+    private javax.swing.JPanel pnlPergunta6;
+    private javax.swing.JPanel pnlPergunta7;
+    private javax.swing.JPanel pnlPergunta8;
+    private javax.swing.JPanel pnlPergunta9;
+    private javax.swing.JPanel pnlPrincipal;
+    private javax.swing.JRadioButton radio10a;
+    private javax.swing.JRadioButton radio10b;
+    private javax.swing.JRadioButton radio10c;
+    private javax.swing.JRadioButton radio10d;
+    private javax.swing.JRadioButton radio1a;
+    private javax.swing.JRadioButton radio1b;
+    private javax.swing.JRadioButton radio1c;
+    private javax.swing.JRadioButton radio1d;
+    private javax.swing.JRadioButton radio2a;
+    private javax.swing.JRadioButton radio2b;
+    private javax.swing.JRadioButton radio2c;
+    private javax.swing.JRadioButton radio2d;
+    private javax.swing.JRadioButton radio3a;
+    private javax.swing.JRadioButton radio3b;
+    private javax.swing.JRadioButton radio3c;
+    private javax.swing.JRadioButton radio3d;
+    private javax.swing.JRadioButton radio4a;
+    private javax.swing.JRadioButton radio4b;
+    private javax.swing.JRadioButton radio4c;
+    private javax.swing.JRadioButton radio4d;
+    private javax.swing.JRadioButton radio5a;
+    private javax.swing.JRadioButton radio5b;
+    private javax.swing.JRadioButton radio5c;
+    private javax.swing.JRadioButton radio5d;
+    private javax.swing.JRadioButton radio6a;
+    private javax.swing.JRadioButton radio6b;
+    private javax.swing.JRadioButton radio6c;
+    private javax.swing.JRadioButton radio6d;
+    private javax.swing.JRadioButton radio7a;
+    private javax.swing.JRadioButton radio7b;
+    private javax.swing.JRadioButton radio7c;
+    private javax.swing.JRadioButton radio7d;
+    private javax.swing.JRadioButton radio8a;
+    private javax.swing.JRadioButton radio8b;
+    private javax.swing.JRadioButton radio8c;
+    private javax.swing.JRadioButton radio8d;
+    private javax.swing.JRadioButton radio9a;
+    private javax.swing.JRadioButton radio9b;
+    private javax.swing.JRadioButton radio9c;
+    private javax.swing.JRadioButton radio9d;
     // End of variables declaration//GEN-END:variables
 }
