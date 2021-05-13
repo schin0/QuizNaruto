@@ -6,6 +6,7 @@
 package desenvolvimento;
 
 import java.awt.CardLayout;
+import javafx.scene.control.Alert;
 
 /**
  *
@@ -15,6 +16,7 @@ public class Tela extends javax.swing.JFrame {
 
     //VARIÁVEIS:
     double pontos;
+    String nome;
     
     public Tela() {
         initComponents();
@@ -33,7 +35,10 @@ public class Tela extends javax.swing.JFrame {
         pnlInico = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        pnlNome = new javax.swing.JPanel();
+        lblNome = new javax.swing.JLabel();
+        txtNome = new javax.swing.JTextField();
         pnlPergunta1 = new javax.swing.JPanel();
         lblPergunta1 = new javax.swing.JLabel();
         lblTexto1 = new javax.swing.JLabel();
@@ -104,6 +109,13 @@ public class Tela extends javax.swing.JFrame {
         radio10b = new javax.swing.JRadioButton();
         radio10c = new javax.swing.JRadioButton();
         radio10d = new javax.swing.JRadioButton();
+        pnlFinalizar = new javax.swing.JPanel();
+        lblPerguntaFinalizar = new javax.swing.JLabel();
+        btnFinalizar = new javax.swing.JButton();
+        btnRecomecar = new javax.swing.JButton();
+        lblResultado = new javax.swing.JButton();
+        lblSituacaoNome = new javax.swing.JButton();
+        lblResultadoSituacao = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
@@ -124,20 +136,19 @@ public class Tela extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Você realmente conhece");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\schin\\OneDrive\\Área de Trabalho\\NarutoCapa.png")); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desenvolvimento/img5f66060f7e4286.94712572.jpg"))); // NOI18N
 
         javax.swing.GroupLayout pnlInicoLayout = new javax.swing.GroupLayout(pnlInico);
         pnlInico.setLayout(pnlInicoLayout);
         pnlInicoLayout.setHorizontalGroup(
             pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlInicoLayout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(pnlInicoLayout.createSequentialGroup()
+                .addContainerGap(22, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 667, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 409, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         pnlInicoLayout.setVerticalGroup(
             pnlInicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,23 +157,60 @@ public class Tela extends javax.swing.JFrame {
                     .addGroup(pnlInicoLayout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 298, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabel5.getAccessibleContext().setAccessibleName("\n");
+
         pnlPrincipal.add(pnlInico, "inicio");
+
+        pnlNome.setBackground(new java.awt.Color(255, 255, 0));
+
+        lblNome.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lblNome.setText("Digite seu nome:");
+
+        txtNome.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtNome.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomeActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlNomeLayout = new javax.swing.GroupLayout(pnlNome);
+        pnlNome.setLayout(pnlNomeLayout);
+        pnlNomeLayout.setHorizontalGroup(
+            pnlNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlNomeLayout.createSequentialGroup()
+                .addContainerGap(469, Short.MAX_VALUE)
+                .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
+                .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(198, 198, 198))
+        );
+        pnlNomeLayout.setVerticalGroup(
+            pnlNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlNomeLayout.createSequentialGroup()
+                .addContainerGap(123, Short.MAX_VALUE)
+                .addGroup(pnlNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNome, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(120, 120, 120))
+        );
+
+        pnlPrincipal.add(pnlNome, "p1");
 
         pnlPergunta1.setBackground(new java.awt.Color(255, 255, 0));
 
         lblPergunta1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         lblPergunta1.setText("Pergunta 1");
 
-        lblTexto1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        lblTexto1.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         lblTexto1.setText("Onde Naruto vive?");
 
-        radio1a.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1a.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         radio1a.setText("Aldeia da Folha");
         radio1a.setOpaque(false);
         radio1a.addActionListener(new java.awt.event.ActionListener() {
@@ -171,15 +219,20 @@ public class Tela extends javax.swing.JFrame {
             }
         });
 
-        radio1b.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1b.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         radio1b.setText("Aldeia da Areia");
         radio1b.setOpaque(false);
 
-        radio1c.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1c.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         radio1c.setText("Aldeia da Pedra");
         radio1c.setOpaque(false);
+        radio1c.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radio1cActionPerformed(evt);
+            }
+        });
 
-        radio1d.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+        radio1d.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         radio1d.setText("Aldeia da Água");
         radio1d.setOpaque(false);
 
@@ -188,21 +241,23 @@ public class Tela extends javax.swing.JFrame {
         pnlPergunta1Layout.setHorizontalGroup(
             pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPergunta1Layout.createSequentialGroup()
+                .addContainerGap(325, Short.MAX_VALUE)
                 .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlPergunta1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblPergunta1))
-                    .addGroup(pnlPergunta1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(lblTexto1))
-                    .addGroup(pnlPergunta1Layout.createSequentialGroup()
-                        .addGap(94, 94, 94)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPergunta1Layout.createSequentialGroup()
+                        .addComponent(lblTexto1)
+                        .addGap(419, 419, 419))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPergunta1Layout.createSequentialGroup()
                         .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(radio1b)
                             .addComponent(radio1a)
-                            .addComponent(radio1c)
-                            .addComponent(radio1d))))
-                .addContainerGap(647, Short.MAX_VALUE))
+                            .addComponent(radio1b))
+                        .addGap(171, 171, 171)
+                        .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(radio1d)
+                            .addComponent(radio1c))
+                        .addGap(248, 248, 248))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPergunta1Layout.createSequentialGroup()
+                        .addComponent(lblPergunta1)
+                        .addGap(456, 456, 456))))
         );
         pnlPergunta1Layout.setVerticalGroup(
             pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,15 +266,15 @@ public class Tela extends javax.swing.JFrame {
                 .addComponent(lblPergunta1)
                 .addGap(18, 18, 18)
                 .addComponent(lblTexto1)
-                .addGap(18, 18, 18)
-                .addComponent(radio1a)
-                .addGap(18, 18, 18)
-                .addComponent(radio1b)
-                .addGap(18, 18, 18)
-                .addComponent(radio1c)
-                .addGap(18, 18, 18)
-                .addComponent(radio1d)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(radio1a)
+                    .addComponent(radio1c))
+                .addGap(45, 45, 45)
+                .addGroup(pnlPergunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(radio1b)
+                    .addComponent(radio1d))
+                .addGap(54, 54, 54))
         );
 
         pnlPrincipal.add(pnlPergunta1, "p1");
@@ -272,7 +327,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio2b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio2c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio2d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(601, Short.MAX_VALUE))
+                .addContainerGap(825, Short.MAX_VALUE))
         );
         pnlPergunta2Layout.setVerticalGroup(
             pnlPergunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -342,7 +397,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio3b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio3c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio3d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(445, Short.MAX_VALUE))
+                .addContainerGap(669, Short.MAX_VALUE))
         );
         pnlPergunta3Layout.setVerticalGroup(
             pnlPergunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -412,7 +467,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio4b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio4c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio4d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(345, Short.MAX_VALUE))
+                .addContainerGap(569, Short.MAX_VALUE))
         );
         pnlPergunta4Layout.setVerticalGroup(
             pnlPergunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -482,7 +537,7 @@ public class Tela extends javax.swing.JFrame {
                                 .addGap(36, 36, 36)
                                 .addComponent(lblTexto5)))
                         .addGap(15, 15, 15)))
-                .addContainerGap(657, Short.MAX_VALUE))
+                .addContainerGap(881, Short.MAX_VALUE))
         );
         pnlPergunta5Layout.setVerticalGroup(
             pnlPergunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -557,7 +612,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio6b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio6c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio6d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(398, Short.MAX_VALUE))
+                .addContainerGap(622, Short.MAX_VALUE))
         );
         pnlPergunta6Layout.setVerticalGroup(
             pnlPergunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -628,7 +683,7 @@ public class Tela extends javax.swing.JFrame {
                                 .addComponent(radio7a, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(radio7b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(radio7c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(470, Short.MAX_VALUE))
+                .addContainerGap(694, Short.MAX_VALUE))
         );
         pnlPergunta7Layout.setVerticalGroup(
             pnlPergunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,7 +753,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio8b, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio8c, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio8d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(603, Short.MAX_VALUE))
+                .addContainerGap(827, Short.MAX_VALUE))
         );
         pnlPergunta8Layout.setVerticalGroup(
             pnlPergunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -768,7 +823,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio9d, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(radio9b)
                             .addComponent(radio9c, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(287, Short.MAX_VALUE))
+                .addContainerGap(511, Short.MAX_VALUE))
         );
         pnlPergunta9Layout.setVerticalGroup(
             pnlPergunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -838,7 +893,7 @@ public class Tela extends javax.swing.JFrame {
                             .addComponent(radio10b)
                             .addComponent(radio10c)
                             .addComponent(radio10d))))
-                .addContainerGap(629, Short.MAX_VALUE))
+                .addContainerGap(853, Short.MAX_VALUE))
         );
         pnlPergunta10Layout.setVerticalGroup(
             pnlPergunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -860,6 +915,98 @@ public class Tela extends javax.swing.JFrame {
 
         pnlPrincipal.add(pnlPergunta10, "p10");
 
+        pnlFinalizar.setBackground(new java.awt.Color(255, 255, 255));
+        pnlFinalizar.setForeground(new java.awt.Color(255, 255, 153));
+
+        lblPerguntaFinalizar.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
+        lblPerguntaFinalizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPerguntaFinalizar.setText("Você quer finalizar o Quiz?");
+
+        btnFinalizar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        btnFinalizar.setText("FINALIZAR");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFinalizarActionPerformed(evt);
+            }
+        });
+
+        btnRecomecar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        btnRecomecar.setText("RECOMEÇAR");
+        btnRecomecar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRecomecarActionPerformed(evt);
+            }
+        });
+
+        lblResultado.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        lblResultado.setText("...");
+        lblResultado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lblResultadoActionPerformed(evt);
+            }
+        });
+
+        lblSituacaoNome.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        lblSituacaoNome.setText("Situação:");
+        lblSituacaoNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lblSituacaoNomeActionPerformed(evt);
+            }
+        });
+
+        lblResultadoSituacao.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        lblResultadoSituacao.setText("...");
+        lblResultadoSituacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lblResultadoSituacaoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlFinalizarLayout = new javax.swing.GroupLayout(pnlFinalizar);
+        pnlFinalizar.setLayout(pnlFinalizarLayout);
+        pnlFinalizarLayout.setHorizontalGroup(
+            pnlFinalizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlFinalizarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPerguntaFinalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 1084, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFinalizarLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlFinalizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFinalizarLayout.createSequentialGroup()
+                        .addComponent(lblSituacaoNome)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblResultadoSituacao, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFinalizarLayout.createSequentialGroup()
+                        .addComponent(btnFinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(161, 161, 161)
+                        .addComponent(btnRecomecar, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFinalizarLayout.createSequentialGroup()
+                        .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(150, 150, 150)))
+                .addGap(274, 274, 274))
+        );
+        pnlFinalizarLayout.setVerticalGroup(
+            pnlFinalizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlFinalizarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblPerguntaFinalizar)
+                .addGap(38, 38, 38)
+                .addGroup(pnlFinalizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnRecomecar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnFinalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlFinalizarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSituacaoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblResultadoSituacao, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20))
+        );
+
+        pnlPrincipal.add(pnlFinalizar, "card13");
+
         jButton1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
         jButton1.setText("Anterior");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -880,7 +1027,7 @@ public class Tela extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
+            .addComponent(pnlPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
@@ -936,7 +1083,7 @@ public class Tela extends javax.swing.JFrame {
     private void radio3dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio3dActionPerformed
         // Alternativa correta:
         if (radio3d.isSelected()) {
-            pontos++; 
+            pontos++;
         }
     }//GEN-LAST:event_radio3dActionPerformed
 
@@ -989,6 +1136,45 @@ public class Tela extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_radio10dActionPerformed
 
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+        // TODO add your handling code here:
+        lblResultado.setText((pontos) + " /10"); 
+        if (pontos < 5) {
+            lblResultadoSituacao.setText("Você não é um bom ninja :( ");             
+        } else {
+            lblResultadoSituacao.setText("Parabéns, ninja " + nome);            
+        } 
+        
+    }//GEN-LAST:event_btnFinalizarActionPerformed
+
+    private void lblResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblResultadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblResultadoActionPerformed
+
+    private void radio1cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio1cActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radio1cActionPerformed
+
+    private void btnRecomecarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRecomecarActionPerformed
+        // TODO add your handling code here:
+        pontos = 0;
+        txtNome.setText("");
+        lblResultado.setText("...");
+        lblResultadoSituacao.setText("...");
+    }//GEN-LAST:event_btnRecomecarActionPerformed
+
+    private void lblSituacaoNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblSituacaoNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblSituacaoNomeActionPerformed
+
+    private void lblResultadoSituacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblResultadoSituacaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblResultadoSituacaoActionPerformed
+
+    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1025,11 +1211,14 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnFinalizar;
+    private javax.swing.JButton btnRecomecar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblPergunta1;
     private javax.swing.JLabel lblPergunta10;
     private javax.swing.JLabel lblPergunta2;
@@ -1040,6 +1229,10 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JLabel lblPergunta7;
     private javax.swing.JLabel lblPergunta8;
     private javax.swing.JLabel lblPergunta9;
+    private javax.swing.JLabel lblPerguntaFinalizar;
+    private javax.swing.JButton lblResultado;
+    private javax.swing.JButton lblResultadoSituacao;
+    private javax.swing.JButton lblSituacaoNome;
     private javax.swing.JLabel lblTexto1;
     private javax.swing.JLabel lblTexto10;
     private javax.swing.JLabel lblTexto2;
@@ -1050,7 +1243,9 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JLabel lblTexto7;
     private javax.swing.JLabel lblTexto8;
     private javax.swing.JLabel lblTexto9;
+    private javax.swing.JPanel pnlFinalizar;
     private javax.swing.JPanel pnlInico;
+    private javax.swing.JPanel pnlNome;
     private javax.swing.JPanel pnlPergunta1;
     private javax.swing.JPanel pnlPergunta10;
     private javax.swing.JPanel pnlPergunta2;
@@ -1102,5 +1297,6 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JRadioButton radio9b;
     private javax.swing.JRadioButton radio9c;
     private javax.swing.JRadioButton radio9d;
+    private javax.swing.JTextField txtNome;
     // End of variables declaration//GEN-END:variables
 }
